@@ -1,5 +1,6 @@
 import './App.css';
 import { ObjectUseState } from './Component/ImmutableState/ObjectUseState';
+import { ParentThree } from './Component/IncorrectOptimization/ParentThree';
 import { ChildOne } from './Component/Optimization/ChildOne';
 import { GrandParent } from './Component/Optimization/GrandParent';
 import { ParentOne } from './Component/Optimization/ParentOne';
@@ -12,7 +13,8 @@ function App() {
   console.log('UseState Render')
   return (
     <div className="App">
-      <ParentTwo/>
+      <ParentThree/>
+      {/* <ParentTwo/> */}
      {/* <GrandParent/> */}
       {/* <Parent/> */}
       {/* <ObjectUseState/> */}
