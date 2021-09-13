@@ -1,4 +1,5 @@
 import './App.css';
+import { ContextParent } from './Component/Context/ContextParent';
 import { ObjectUseState } from './Component/ImmutableState/ObjectUseState';
 import { ParentFour } from './Component/IncorrectOptimization/ParentFour';
 import { ParentThree } from './Component/IncorrectOptimization/ParentThree';
@@ -14,7 +15,8 @@ function App() {
   console.log('UseState Render')
   return (
     <div className="App">
-      <ParentFour/>
+      <ContextParent/>
+      {/* <ParentFour/> */}
       {/* <ParentThree/> */}
       {/* <ParentTwo/> */}
      {/* <GrandParent/> */}
