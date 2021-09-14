@@ -24,6 +24,7 @@ function NestedArrayList(){
             <Table striped variant="dark">
                 <tbody>
                     <tr>
+                        <td>S.N</td>
                         <td>Name</td>
                         <td>Email</td>
                         <td>Address</td>
