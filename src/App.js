@@ -11,13 +11,15 @@ import { Parent } from './Component/parent child/Parent';
 import { UseReducer } from './Component/UseReducer/UseReducer';
 import { UseState } from './Component/UseState/UseState';
 import ArrayList from './Components/ArrayListOne';
+import ArrayListThree from './Components/ArrayListThree';
 import ArrayListTwo from './Components/ArrayListTwo';
 
 function App() {
   console.log('UseState Render')
   return (
     <div className="App">
-      <ArrayListTwo/>
+      <ArrayListThree/>
+      {/* <ArrayListTwo/> */}
       {/* <ArrayList/> */}
       {/* <ContextParent/> */}
       {/* <ParentFour/> */}
