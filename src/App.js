@@ -13,6 +13,7 @@ import { UseState } from './Component/UseState/UseState';
 import ArrayList from './Components/ArrayListOne';
 import ArrayListThree from './Components/ArrayListThree';
 import ArrayListTwo from './Components/ArrayListTwo';
+import Fragment from './Components/Fragment';
 import NestedArrayList from './Components/NestedArrayList';
 import ReuseLoop from './Components/ReusingLoop';
 
@@ -20,7 +21,8 @@ function App() {
   console.log('UseState Render')
   return (
     <div className="App">
-      <ReuseLoop/>
+      <Fragment/>
+      {/* <ReuseLoop/> */}
       {/* <NestedArrayList/> */}
       {/* <ArrayListThree/> */}
       {/* <ArrayListTwo/> */}
