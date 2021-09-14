@@ -31,7 +31,7 @@ function NestedArrayList(){
                     {
                         user.map((item,i) =>
                         <tr key={i}>
-                            <td>{i}</td>
+                            <td>{i+1}</td>
                             <td>{item.name}</td>
                             <td>{item.email}</td>
                             <td>
