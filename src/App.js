@@ -26,12 +26,14 @@ import ReuseLoop from './Components/ReusingLoop';
 import UnControlled from './Components/UnControlled';
 import UseMemo from './Components/UseMemo';
 import UseRef from './Components/UseRef';
+import Rounting from './Routing/Rounting';
 
 function App() {
   
   return (
     <div className="App">
-      <Hoc/>
+      <Rounting/>
+      {/* <Hoc/> */}
       {/* <UnControlled/> */}
       {/* <Controlled/> */}
       {/* <ParentRef/> */}
