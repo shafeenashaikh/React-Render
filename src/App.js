@@ -17,6 +17,7 @@ import ArrayListTwo from './Components/ArrayListTwo';
 import Fragment from './Components/Fragment';
 import NestedArrayList from './Components/NestedArrayList';
 import ParentData from './Components/Parent';
+import ParentRef from './Components/ParentRef';
 import PureComponent from './Components/PureComponent';
 import Ref from './Components/Ref';
 import ReuseLoop from './Components/ReusingLoop';
@@ -27,7 +28,8 @@ function App() {
   
   return (
     <div className="App">
-      <UseRef/>
+      <ParentRef/>
+      {/* <UseRef/> */}
       {/* <Ref/> */}
       {/* <UseMemo/>
      <PureComponent/> */}
