@@ -22,6 +22,7 @@ import ParentRef from './Components/ParentRef';
 import PureComponent from './Components/PureComponent';
 import Ref from './Components/Ref';
 import ReuseLoop from './Components/ReusingLoop';
+import UnControlled from './Components/UnControlled';
 import UseMemo from './Components/UseMemo';
 import UseRef from './Components/UseRef';
 
@@ -29,7 +30,8 @@ function App() {
   
   return (
     <div className="App">
-      <Controlled/>
+      <UnControlled/>
+      {/* <Controlled/> */}
       {/* <ParentRef/> */}
       {/* <UseRef/> */}
       {/* <Ref/> */}
