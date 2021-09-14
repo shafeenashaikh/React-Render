@@ -1,3 +1,4 @@
+
 import './App.css';
 import { ContextParent } from './Component/Context/ContextParent';
 import { ObjectUseState } from './Component/ImmutableState/ObjectUseState';
@@ -16,13 +17,15 @@ import ArrayListTwo from './Components/ArrayListTwo';
 import Fragment from './Components/Fragment';
 import NestedArrayList from './Components/NestedArrayList';
 import ParentData from './Components/Parent';
+import PureComponent from './Components/PureComponent';
 import ReuseLoop from './Components/ReusingLoop';
 
 function App() {
-  console.log('UseState Render')
+  
   return (
     <div className="App">
-      <ParentData/>
+     <PureComponent/>
+      {/* <ParentData/> */}
       {/* <Fragment/> */}
       {/* <ReuseLoop/> */}
       {/* <NestedArrayList/> */}
