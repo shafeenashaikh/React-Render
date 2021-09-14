@@ -5,7 +5,7 @@ function ArrayListThree(){
 
     const studednts = [
         {name:'Bruce', email:'Bruce@gmail.com', contact: 7777},
-        {name:'Diana', email:'Dianae@gmail.com', contact: 9999},
+        {name:'Diana', email:'Diana@gmail.com', contact: 9999},
         {name:'sam', email:'sam@gmail.com', contact: 5555}
     ]
     return(
