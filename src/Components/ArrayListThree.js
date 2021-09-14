@@ -11,7 +11,7 @@ function ArrayListThree(){
     return(
         <div>
             <h2>Handle list with Bootstrap table</h2>
-            <Table>
+            <Table striped>
                 <tbody>
                 <tr>
                     <td>Name</td>
