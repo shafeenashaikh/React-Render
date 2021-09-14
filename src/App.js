@@ -16,6 +16,7 @@ import ArrayListThree from './Components/ArrayListThree';
 import ArrayListTwo from './Components/ArrayListTwo';
 import Controlled from './Components/Controlled';
 import Fragment from './Components/Fragment';
+import Hoc from './Components/HOC';
 import NestedArrayList from './Components/NestedArrayList';
 import ParentData from './Components/Parent';
 import ParentRef from './Components/ParentRef';
@@ -30,7 +31,8 @@ function App() {
   
   return (
     <div className="App">
-      <UnControlled/>
+      <Hoc/>
+      {/* <UnControlled/> */}
       {/* <Controlled/> */}
       {/* <ParentRef/> */}
       {/* <UseRef/> */}
