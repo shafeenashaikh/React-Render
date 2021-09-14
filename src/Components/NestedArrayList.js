@@ -29,8 +29,9 @@ function NestedArrayList(){
                         <td>Address</td>
                     </tr>
                     {
-                        user.map((item) =>
-                        <tr>
+                        user.map((item,i) =>
+                        <tr key={i}>
+                            <td>{i}</td>
                             <td>{item.name}</td>
                             <td>{item.email}</td>
                             <td>
@@ -42,8 +43,8 @@ function NestedArrayList(){
                                             <td>Country</td>
                                         </tr>
                                         {
-                                            item.address.map((data) => 
-                                            <tr>
+                                            item.address.map((data,i) => 
+                                            <tr key={i}>
                                                 <td>{data.Hn}</td>
                                                 <td>{data.city}</td>
                                                 <td>{data.country}</td>
