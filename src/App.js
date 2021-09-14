@@ -18,6 +18,7 @@ import Fragment from './Components/Fragment';
 import NestedArrayList from './Components/NestedArrayList';
 import ParentData from './Components/Parent';
 import PureComponent from './Components/PureComponent';
+import Ref from './Components/Ref';
 import ReuseLoop from './Components/ReusingLoop';
 import UseMemo from './Components/UseMemo';
 
@@ -25,8 +26,9 @@ function App() {
   
   return (
     <div className="App">
-      <UseMemo/>
-     {/* <PureComponent/> */}
+      <Ref/>
+      {/* <UseMemo/>
+     <PureComponent/> */}
       {/* <ParentData/> */}
       {/* <Fragment/> */}
       {/* <ReuseLoop/> */}
