@@ -10,12 +10,14 @@ import { ParentTwo } from './Component/Optimization/ParentTwo';
 import { Parent } from './Component/parent child/Parent';
 import { UseReducer } from './Component/UseReducer/UseReducer';
 import { UseState } from './Component/UseState/UseState';
+import ArrayList from './Components/ArrayList';
 
 function App() {
   console.log('UseState Render')
   return (
     <div className="App">
-      <ContextParent/>
+      <ArrayList/>
+      {/* <ContextParent/> */}
       {/* <ParentFour/> */}
       {/* <ParentThree/> */}
       {/* <ParentTwo/> */}
