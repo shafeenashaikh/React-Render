@@ -21,12 +21,14 @@ import PureComponent from './Components/PureComponent';
 import Ref from './Components/Ref';
 import ReuseLoop from './Components/ReusingLoop';
 import UseMemo from './Components/UseMemo';
+import UseRef from './Components/UseRef';
 
 function App() {
   
   return (
     <div className="App">
-      <Ref/>
+      <UseRef/>
+      {/* <Ref/> */}
       {/* <UseMemo/>
      <PureComponent/> */}
       {/* <ParentData/> */}
