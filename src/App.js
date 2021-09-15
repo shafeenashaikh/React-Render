@@ -36,8 +36,8 @@ function App() {
   
   return (
     <div className="App">
-      <PostApi/>
-      {/* <GetApi/> */}
+      {/* <PostApi/> */}
+      <GetApi/>
       {/* <DynamicRouting/> */}
       {/* <RouteOne/> */}
       {/* <Rounting/> */}
