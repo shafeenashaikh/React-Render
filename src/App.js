@@ -1,4 +1,5 @@
 
+import GetApi from './API/GetApi';
 import './App.css';
 import { ContextParent } from './Component/Context/ContextParent';
 import { ObjectUseState } from './Component/ImmutableState/ObjectUseState';
@@ -34,7 +35,8 @@ function App() {
   
   return (
     <div className="App">
-      <DynamicRouting/>
+      <GetApi/>
+      {/* <DynamicRouting/> */}
       {/* <RouteOne/> */}
       {/* <Rounting/> */}
       {/* <Hoc/> */}
