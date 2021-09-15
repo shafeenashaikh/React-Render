@@ -26,6 +26,7 @@ import ReuseLoop from './Components/ReusingLoop';
 import UnControlled from './Components/UnControlled';
 import UseMemo from './Components/UseMemo';
 import UseRef from './Components/UseRef';
+import DynamicRouting from './Routing/DynamicRouting';
 import Rounting from './Routing/Rounting';
 import RouteOne from './Routing/RouteOne';
 
@@ -33,7 +34,8 @@ function App() {
   
   return (
     <div className="App">
-      <RouteOne/>
+      <DynamicRouting/>
+      {/* <RouteOne/> */}
       {/* <Rounting/> */}
       {/* <Hoc/> */}
       {/* <UnControlled/> */}
