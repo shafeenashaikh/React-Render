@@ -2,6 +2,7 @@
 import GetApi from './API/GetApi';
 import PostApi from './API/PostApi';
 import PreFilled from './API/PreFilled';
+import UpdateData from './API/UpdateData';
 import './App.css';
 import { ContextParent } from './Component/Context/ContextParent';
 import { ObjectUseState } from './Component/ImmutableState/ObjectUseState';
@@ -37,7 +38,8 @@ function App() {
   
   return (
     <div className="App">
-      <PreFilled/>
+      <UpdateData/>
+      {/* <PreFilled/> */}
       {/* <PostApi/> */}
       {/* <GetApi/> */}
       {/* <DynamicRouting/> */}
