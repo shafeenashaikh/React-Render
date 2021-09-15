@@ -7,7 +7,18 @@ function PostApi(){
     const [mobail,setMobail] = useState("");
 
     function saveUser(){
-        console.log(name,email,mobail)
+        console.log({name,email,mobail})
+        let data={name,email,mobail}
+        fetch('https://jsonplaceholder.typicode.com/posts/1',{
+            method:"Post",
+            headers:{
+                'Accept':'application/json',
+                'Content':'application/json'
+            },
+            body: JSON.stringify(data)
+        }).then((result)=>{
+            console.log('result',result)
+        })
     }
     return(
         <div>
