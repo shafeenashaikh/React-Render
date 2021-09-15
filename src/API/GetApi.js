@@ -11,6 +11,19 @@ useEffect(()=>{
     })
 },[])
 
+
+
+function deleteUser(id){
+
+   fetch(`https://jsonplaceholder.typicode.com/todos/${id}`,{
+       method: 'DELETE'
+   }).then((result)=>{
+       result.json().then((resp)=>{
+           console.log(resp)
+       })
+   })
+}
+
 console.log(data)
     return(
         <div>
@@ -20,7 +33,7 @@ console.log(data)
                     <td>UserId</td>
                     <td>ID</td>
                     <td>Title</td>
-                    <td>completed</td>
+                   
                 </tr>
                 {
                     data.map((item,i) => 
@@ -28,7 +41,7 @@ console.log(data)
                     <td>{item.userId}</td>
                     <td>{item.id}</td>
                     <td>{item.title}</td>
-                    <td>{item.completed}</td>
+                    <td><button onClick={()=>deleteUser(item.id)}>Delete</button></td>
                 </tr>
                     )
                 }
