@@ -1,16 +1,14 @@
 import React from 'react';
-import {BrowserRouter as Router, Link, Route} from 'react-router-dom'
+import { Route} from 'react-router-dom'
+import Nav from './Nav';
 
 function Rounting(){
     return(
         <div>
-            <Router>
-                <Link to="/home"> Home Page</Link><br/>
-                <Link to="/about"> About Page</Link>
+          
+                <Nav/>
                 <Route path="/home">  <Home/> </Route>
                 <Route path="/about"> <About/> </Route>
-                
-            </Router>
         </div>
     )
 }
