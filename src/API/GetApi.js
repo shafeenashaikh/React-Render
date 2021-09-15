@@ -1,18 +1,20 @@
 import React, { useEffect, useState } from "react";
 
 function GetApi(){
-    const [data,setData] = useState([])
+    const [user,setUser] = useState([])
 useEffect(()=>{
-    fetch('https://jsonplaceholder.typicode.com/todos').then((result)=>{
-        result.json().then((resp)=>{
-            // console.log('result',resp)
-            setData(resp)
-        })
-    })
+    getUsers();
 },[])
 
+function getUsers(){
+    fetch('https://jsonplaceholder.typicode.com/todos').then((result)=>{
+        result.json().then((resp)=>{
+            setUser(resp)
+        })
+    })
+}
 
-
+console.log(user)
 function deleteUser(id){
 
    fetch(`https://jsonplaceholder.typicode.com/todos/${id}`,{
@@ -20,11 +22,12 @@ function deleteUser(id){
    }).then((result)=>{
        result.json().then((resp)=>{
            console.log(resp)
+           getUsers()
        })
    })
 }
 
-console.log(data)
+console.log(user)
     return(
         <div>
             <h2>Get API</h2>
@@ -36,7 +39,7 @@ console.log(data)
                    
                 </tr>
                 {
-                    data.map((item,i) => 
+                    user.map((item,i) => 
                     <tr key={i}>
                     <td>{item.userId}</td>
                     <td>{item.id}</td>
