@@ -12,7 +12,7 @@ function Rounting(){
                 <Nav/>
                 <Route path="/about"> <About/> </Route>
                 <Route path="/contact"> <Contact/> </Route>
-                <Route path="/" exact>  <Home/> </Route>
+                <Route path="/" exact={true}>  <Home/> </Route>
         </div>
     )
 }

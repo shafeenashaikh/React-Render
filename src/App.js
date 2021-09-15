@@ -27,12 +27,14 @@ import UnControlled from './Components/UnControlled';
 import UseMemo from './Components/UseMemo';
 import UseRef from './Components/UseRef';
 import Rounting from './Routing/Rounting';
+import RouteOne from './Routing/RouteOne';
 
 function App() {
   
   return (
     <div className="App">
-      <Rounting/>
+      <RouteOne/>
+      {/* <Rounting/> */}
       {/* <Hoc/> */}
       {/* <UnControlled/> */}
       {/* <Controlled/> */}
