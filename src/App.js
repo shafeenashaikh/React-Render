@@ -33,6 +33,7 @@ import StateObject from './Components/StateObject';
 import UnControlled from './Components/UnControlled';
 import UseMemo from './Components/UseMemo';
 import UseRef from './Components/UseRef';
+import Context from './Context/Context';
 import DynamicRouting from './Routing/DynamicRouting';
 import Rounting from './Routing/Rounting';
 import RouteOne from './Routing/RouteOne';
@@ -41,7 +42,8 @@ function App() {
   
   return (
     <div className="App">
-      <StateObject/>
+      <Context/>
+      {/* <StateObject/> */}
       {/* <PrevStateOne/> */}
       {/* <PrevState/> */}
       {/* <UpdateData/> */}
