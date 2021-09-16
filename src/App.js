@@ -25,6 +25,7 @@ import NestedArrayList from './Components/NestedArrayList';
 import ParentData from './Components/Parent';
 import ParentRef from './Components/ParentRef';
 import PrevState from './Components/PrevState';
+import PrevStateOne from './Components/PrevStateOne';
 import PureComponent from './Components/PureComponent';
 import Ref from './Components/Ref';
 import ReuseLoop from './Components/ReusingLoop';
@@ -39,7 +40,8 @@ function App() {
   
   return (
     <div className="App">
-      <PrevState/>
+      <PrevStateOne/>
+      {/* <PrevState/> */}
       {/* <UpdateData/> */}
       {/* <PreFilled/> */}
       {/* <PostApi/> */}
