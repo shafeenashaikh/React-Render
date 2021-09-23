@@ -37,12 +37,17 @@ import Context from './Context/Context';
 import DynamicRouting from './Routing/DynamicRouting';
 import Rounting from './Routing/Rounting';
 import RouteOne from './Routing/RouteOne';
+import React from 'react';
 
-function App() {
-  
+
+class App extends React.Component{
+
+render(){
   return (
     <div className="App">
+    
       <Context/>
+
       {/* <StateObject/> */}
       {/* <PrevStateOne/> */}
       {/* <PrevState/> */}
@@ -78,7 +83,7 @@ function App() {
       {/* <UseState/> */}
       {/* <UseReducer/> */}
     </div>
-  );
+  )}
 }
 
 export default App;
