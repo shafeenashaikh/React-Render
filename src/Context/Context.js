@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { CommonContext } from './CommonContext'
+import Footer from './Footer'
+import Header from './Header'
 import Main from './Main'
 import UpdateButton from './UpdateButton'
 class Context extends Component{
@@ -20,10 +22,12 @@ class Context extends Component{
       } 
     render(){
         return(
-            <CommonContext.Provider value={this.state}>
+      <CommonContext.Provider value={this.state}>
+        <Header/>
         <h2>Context API</h2>
         <Main/>
         <UpdateButton/>
+        <Footer/>
       </CommonContext.Provider>
         )
     }
