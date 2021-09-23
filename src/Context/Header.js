@@ -7,7 +7,7 @@ class Header extends Component{
             <CommonContext.Consumer>
                 {
                     ({color})=>(
-                        <h1 style={{backgroundColor:color}}> Header Page</h1>
+                        <h1 style={{backgroundColor:color}}> Header</h1>
                     )
                 }
             </CommonContext.Consumer>

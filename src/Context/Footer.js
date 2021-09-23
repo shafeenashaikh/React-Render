@@ -7,7 +7,7 @@ class Footer extends Component{
             <CommonContext.Consumer>
                 {
                     ({color})=>(
-                        <h1 style={{backgroundColor:color}} className="footer"> Footer Page</h1>
+                        <h1 style={{backgroundColor:color}} className="footer"> Footer</h1>
                     )
                 }
             </CommonContext.Consumer>
